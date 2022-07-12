@@ -1,9 +1,11 @@
 # about-me
 
-Author: Stephen Clemmer
+## Lab 2
 
-## Links that were used to make the project
+### Author: Stephen Clemmer
 
-## Persons with whom I collaborated
+### Links that were used to make the project
 
-## Reflections
+### Persons with whom I collaborated
+
+### Reflections
