@@ -42,3 +42,6 @@ if (questionFive === 'no' || questionFive === 'n'){
 } else {
   alert(`Sorry, ${userName} but Stephen does not enjoy playing soccer. He'd rather play guitar or piano, or go to a yoga class`);
 }
+
+// Start of Lab 03
+
