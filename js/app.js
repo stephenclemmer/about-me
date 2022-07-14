@@ -47,46 +47,6 @@ alert(`Hello ${userName}! It's great to meet you! Please continue to play a shor
 // https://www.codecademy.com/forum_questions/5575df34937676a0b50000e8#:~:text=Answer%20557617aae0a300f2cf000609&text=prompt()%20always%20returns%20a,'string'%20and%20not%20null%20.
 
 
-
-// ####
-
-// // Prompt the user to guess my favorite number
-
-// let questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
-
-// if(questionSix < 12){
-  //   guessLimit--;
-  //   questionSix = prompt('Too low. What\'s you next guess?');
-  // }else if(questionSix > 12){
-    //   guessLimit--;
-    //   questionSix = prompt('Too high. What\'s you next guess?');
-    // // If the correct number is guessed, alert the user with a message to let them know they are correct.
-    // }else if(questionSix === '12'){
-      //   alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
-      // }
-      
-      // if(questionSix < 12){
-        //   guessLimit--;
-        //   questionSix = prompt('Too low. What\'s you next guess?')
-        // }else if(questionSix > 12){
-          //   guessLimit--;
-          //   questionSix = prompt('Too high. What\'s you next guess?')
-          // }else if(questionSix === '12'){
-            //   alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
-            // }
-            
-            // if(questionSix < 12){
-              //   guessLimit--;
-              //   questionSix = prompt('Too low. What\'s you next guess?');
-              // }else if(questionSix > 12){
-                //   guessLimit--;
-                //   questionSix = prompt('Too high. What\'s you next guess?');
-                // }else if(questionSix === '12'){
-                  //   alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
-                  // }
-                  
-                  // #### 
-                  
 // Define a variable for the maximum number of guesses (4)
 let guessLimit = 4;
 
@@ -99,13 +59,9 @@ let correctNumber = false;
 let questionSix;
 
 while(guessLimit > 0 && correctNumber === false){
-  console.log(guessLimit);
   if (guessLimit === 4){
     questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
-    console.log('I\'m asking the first question')
   } else if (questionSix < 12){
-    console.log(guessLimit);
-    console.log('I\'m asking a question')
     questionSix = prompt('Too low. What\'s you next guess?');
   } else if (questionSix > 12){
     questionSix = prompt('Too high. What\'s you next guess?');
@@ -121,23 +77,6 @@ while(guessLimit > 0 && correctNumber === false){
 
 // When the correct number is guessed, correctNumber = true
 // // }
-
-
-
-// }
-
-//   let questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
-//   guessLimit--;
-// }
-
-
-
-
-
-
-
-
-
 
 // The main difference between the == and === operator in javascript is that the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands. Because we have defined 'use strict' at the top of the .js document, it is necessary to define favNum as a string, because when the user inputs the number 12 into the prompt, it will be received as a sting, not a number.
 // let guessNum = 4
