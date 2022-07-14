@@ -72,6 +72,10 @@ while(guessLimit > 0 && correctNumber === false){
   guessLimit--;
 }
 
+if(guessLimit === 0){
+  alert('Nice tryy. Here\'s the answer. Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+}
+
 // 1. correctNumber = true
 // 2 guessLimit = 0
 
