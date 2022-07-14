@@ -47,6 +47,46 @@ alert(`Hello ${userName}! It's great to meet you! Please continue to play a shor
 // https://www.codecademy.com/forum_questions/5575df34937676a0b50000e8#:~:text=Answer%20557617aae0a300f2cf000609&text=prompt()%20always%20returns%20a,'string'%20and%20not%20null%20.
 
 
+
+// ####
+
+// // Prompt the user to guess my favorite number
+
+// let questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
+
+// if(questionSix < 12){
+  //   guessLimit--;
+  //   questionSix = prompt('Too low. What\'s you next guess?');
+  // }else if(questionSix > 12){
+    //   guessLimit--;
+    //   questionSix = prompt('Too high. What\'s you next guess?');
+    // // If the correct number is guessed, alert the user with a message to let them know they are correct.
+    // }else if(questionSix === '12'){
+      //   alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+      // }
+      
+      // if(questionSix < 12){
+        //   guessLimit--;
+        //   questionSix = prompt('Too low. What\'s you next guess?')
+        // }else if(questionSix > 12){
+          //   guessLimit--;
+          //   questionSix = prompt('Too high. What\'s you next guess?')
+          // }else if(questionSix === '12'){
+            //   alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+            // }
+            
+            // if(questionSix < 12){
+              //   guessLimit--;
+              //   questionSix = prompt('Too low. What\'s you next guess?');
+              // }else if(questionSix > 12){
+                //   guessLimit--;
+                //   questionSix = prompt('Too high. What\'s you next guess?');
+                // }else if(questionSix === '12'){
+                  //   alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+                  // }
+                  
+                  // #### 
+                  
 // Define a variable for the maximum number of guesses (4)
 let guessLimit = 4;
 
@@ -56,46 +96,32 @@ let favNum = '12';
 // Define a variable for wrong guesses called correctNumber that is False so that you can set up a while loop to end the game when either guesses have run out, or when the faveNum is correctly guessed.
 let correctNumber = false;
 
-// Prompt the user to guess my favorite number
+let questionSix;
 
-let questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
-
-if(questionSix < 12){
+while(guessLimit > 0 && correctNumber === false){
+  console.log(guessLimit);
+  if (guessLimit === 4){
+    questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
+    console.log('I\'m asking the first question')
+  } else if (questionSix < 12){
+    console.log(guessLimit);
+    console.log('I\'m asking a question')
+    questionSix = prompt('Too low. What\'s you next guess?');
+  } else if (questionSix > 12){
+    questionSix = prompt('Too high. What\'s you next guess?');
+  } else if (questionSix === '12'){
+    alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+    correctNumber = true;
+  }
   guessLimit--;
-  questionSix = prompt('Too low. What\'s you next guess?');
-}else if(questionSix > 12){
-  guessLimit--;
-  questionSix = prompt('Too high. What\'s you next guess?');
-// If the correct number is guessed, alert the user with a message to let them know they are correct.
-}else if(questionSix === '12'){
-  alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
 }
 
-if(questionSix < 12){
-  guessLimit--;
-  questionSix = prompt('Too low. What\'s you next guess?')
-}else if(questionSix > 12){
-  guessLimit--;
-  questionSix = prompt('Too high. What\'s you next guess?')
-}else if(questionSix === '12'){
-  alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
-}
+// 1. correctNumber = true
+// 2 guessLimit = 0
 
-if(questionSix < 12){
-  guessLimit--;
-  questionSix = prompt('Too low. What\'s you next guess?');
-}else if(questionSix > 12){
-  guessLimit--;
-  questionSix = prompt('Too high. What\'s you next guess?');
-}else if(questionSix === '12'){
-  alert('Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
-}
+// When the correct number is guessed, correctNumber = true
+// // }
 
-
-
-
-// while(guessLimit && correctNumber){
-// }
 
 
 // }
@@ -107,7 +133,7 @@ if(questionSix < 12){
 
 
 
-console.log(guessLimit)
+
 
 
 
