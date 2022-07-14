@@ -1,6 +1,12 @@
 'use strict';
 
-// userName();
+let userName = prompt('Please type your preferred name');
+  // console.log(userName);
+
+  alert(`Hello ${userName}! It's great to meet you! Please continue to play a short guessing game about Stephen Clemmer`);
+
+
+
 firstQuestion();
 secondQuestion();
 thirdQuestion();
@@ -9,16 +15,11 @@ fifthQuestion();
 sixthQuestion();
 
 
-// // function userName(){
-//   let userName = prompt('Please type your preferred name');
-//   // console.log(userName);
 
-//   alert(`Hello ${userName}! It's great to meet you! Please continue to play a short guessing game about Stephen Clemmer`);
-// // }
 
 function firstQuestion(){
   let questionOne = prompt('Answer "yes" or "no": Does Stephen Clemmer love coding?').toLowerCase();
-// console.log(questionOne);
+
   if (questionOne === 'yes' || questionOne === 'y'){alert(`That's right ${userName}!, Stephen Clemmer loves coding because it allows him to work on interesting problems and meet interesting people!`);
   } else {
     alert(`I'm sorry, ${userName}, but you're incorrect. Stephen Clemmer LOVES to code!`);
@@ -28,7 +29,7 @@ function firstQuestion(){
 
 function secondQuestion(){
   let questionTwo = prompt('Answer "yes" or "no": Has Stephen worked with Grammy Award winning artists?').toLowerCase();
-  // console.log(questionTwo);
+  
   if (questionTwo === 'yes' || questionTwo === 'y'){
     alert(`That's right ${userName}! Stephen served as an engineer for the Rolling Stones' remastered recordings of their 1969 album Get Yer YaYa's Out, recorded live at Madison Square Garden. Stephen also recorded Norah Jones' live set which was featured on her album The Fall.`);
   } else {
@@ -69,7 +70,7 @@ function fifthQuestion(){
 // Start of Lab 03
 // https://www.codecademy.com/forum_questions/5575df34937676a0b50000e8#:~:text=Answer%20557617aae0a300f2cf000609&text=prompt()%20always%20returns%20a,'string'%20and%20not%20null%20.
 
-
+function sixthQuestion(){
 // Define a variable for the maximum number of guesses (4)
 let guessLimit = 4;
 
@@ -81,7 +82,7 @@ let correctNumber = false;
 
 let questionSix;
 
-function sixthQuestion(){
+
   while(guessLimit > 0 && correctNumber === false){
     if (guessLimit === 4){
       questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
@@ -97,7 +98,7 @@ function sixthQuestion(){
   }
 
   if(guessLimit === 0){
-    alert('Nice tryy. Here\'s the answer. Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+    alert('Nice try. Here\'s the answer. Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
   }
 }
 
