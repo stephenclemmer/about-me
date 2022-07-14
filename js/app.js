@@ -86,3 +86,5 @@ if(guessLimit === 0){
 // let guessNum = 4
 
 
+// Question Seven for Lab 3
+
