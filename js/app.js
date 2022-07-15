@@ -134,20 +134,23 @@ function seventhQuestion(){
 // Make array with possible favorite animal answers
   let favAnimal = ['tiger', 'dog', 'rat', 'meerkat'];
 
-  // Give six attempts to answer
+  // Create a (slow) for-loop to create six attempts to answer.
 
   for(let i = 0; i < 6; i++){
+    // create the initial prompt. Putting it inside of the loop will help avoid the question from being asked an additional time after the loop breaks.
     let questionSeven = prompt(`${userName}, can you guess one of Stephen's favorite animals in six guesses or less?`).toLowerCase();
-
+    // create a fast for-loop to cycle through the length of the array to compare each questionSeven guess to each item in the array. j=0; as long as j is less than the length of the favAnimal array...
     for(let j = 0; j < favAnimal.length; j++){
+      // ...compare the guess to the corresponding item in the array, and if it returns a strictly true answer...
       if(questionSeven === favAnimal[j]){
+        // ...do the following. Otherwise, increment i.
         alert('You got it! I love that animal!');
         score++;
         i = 6;
         break;
       }
     }
-
+  //After these for loops have finished, let the user know what all of the possible answers could have been. Then alert them to their updated score.
   } alert (`These were all of the possible guesses ${favAnimal}`);
   alert(`Your score is ${score} out of 7.`);
 }
