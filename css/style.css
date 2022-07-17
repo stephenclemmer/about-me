@@ -1,13 +1,14 @@
 * {
   line-height: 1.2;
-  color: white;
-  background-color: black;
+  /* color: white;
+  background-color: black; */
 }
 
 header {
   color: green;
   background-color: orange; 
   margin-top: 1vw;
+  position: sticky; top: 0;
 }
 
 h1 {
@@ -16,8 +17,8 @@ h1 {
 }
 
 h3 {
-  color: red;
-  background-color: yellow;
+  color: white;
+  background-color: black;
   text-align: center;
   font-size: 2vw;
 }
@@ -45,4 +46,26 @@ ul li {
 
 ol li {
   display: number;
+}
+
+section.education {
+  color: yellow;
+  background-color: rgb(22, 148, 194);
+}
+
+section.career {
+  color: orange;
+  background-color: purple;
+  
+
+}
+
+section.goals {
+  color: red;
+  background-color: lightgreen;
+}
+
+section.artists {
+  color: black;
+  background-color: yellowgreen;
 }
