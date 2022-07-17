@@ -28,7 +28,6 @@ p {
 }
 
 ul, ol {
-  margin-left: 2%;
   margin: 2vw;
   list-style: normal;
   font-size: 1.5vw;
@@ -38,6 +37,10 @@ ul li {
   list-style: disc outside none;
   display: list-item;
   margin-left: 1em;
+  }
+
+  ol {
+    align: center;
   }
 
 ol li {
