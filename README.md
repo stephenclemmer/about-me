@@ -13,6 +13,7 @@
 Used [Eric Meyer's reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Persons with whom I collaborated
+
 I worked with Alan Chelko on lab 4. A copy of his project exists on my github.
 
 ### Reflections
