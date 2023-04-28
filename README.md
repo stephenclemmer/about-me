@@ -1,6 +1,9 @@
 # about-me
 
-## Lab 2
+## 201 Lab 2, 3, &4
+
+- As a TA, I created a 'lab3' branch to preserve the site before attempting the stretch goals for lab 4
+- I created a 'lab4' branch which I used to work through the stretch goals.
 
 ### Author: Stephen Clemmer
 
@@ -9,6 +12,7 @@
 Used [Eric Meyer's reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Persons with whom I collaborated
+I worked with Alan Chelko on lab 4. A copy of his project exists on my github.
 
 ### Reflections
 
