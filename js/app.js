@@ -17,9 +17,9 @@ seventhQuestion();
 
 
 function firstQuestion(){
-  let questionOne = prompt('Answer "yes" or "no": Does Stephen Clemmer love coding?').toLowerCase();
+  let questionOne = prompt('Answer "yes" or "no": Do I love coding?').toLowerCase();
 
-  if (questionOne === 'yes' || questionOne === 'y'){alert(`That's right ${userName}!, Stephen Clemmer loves coding because it allows him to work on interesting problems and meet interesting people!`);
+  if (questionOne === 'yes' || questionOne === 'y'){alert(`That's right ${userName}!, I love coding because it is full of possibilities`);
     score++;
   } else {
     alert(`I'm sorry, ${userName}, but you're incorrect. Stephen Clemmer LOVES to code!`);
@@ -29,39 +29,39 @@ function firstQuestion(){
 
 
 function secondQuestion(){
-  let questionTwo = prompt('Answer "yes" or "no": Has Stephen worked with Grammy Award winning artists?').toLowerCase();
+  let questionTwo = prompt('Answer "yes" or "no": Have I worked with Grammy Award winning artists?').toLowerCase();
 
   if (questionTwo === 'yes' || questionTwo === 'y'){
-    alert(`That's right ${userName}! Stephen served as an engineer for the Rolling Stones' remastered recordings of their 1969 album Get Yer YaYa's Out, recorded live at Madison Square Garden. Stephen also recorded Norah Jones' live set which was featured on her album The Fall.`);
+    alert(`That's right ${userName}! I had a fun gig in mhy 20's. I served as an engineer for the Rolling Stones' remastered recordings of their 1969 album Get Yer YaYa's Out, recorded live at Madison Square Garden. I also recorded Norah Jones' featured on a special release of her album, The Fall.`);
     score++;
   } else {
-    alert(`Sorry, ${userName} but Stephen has been very fortunate. He served as an engineer for the Rolling Stones' remastered recordings of their 1969 album Get Yer YaYa's Out, recorded live at Madison Square Garden. Stephen also recorded Norah Jones' live set which was featured on her album The Fall.`);
+    alert(`Sorry, ${userName} but I had a cool gig in my 20's. I served as an engineer for the Rolling Stones' remastered recordings of their 1969 album Get Yer YaYa's Out, recorded live at Madison Square Garden. I also recorded Norah Jones' featured on a special release of her album, The Fall.`);
   }
   alert(`Your score is ${score} out of 2.`);
 }
 
 
 function thirdQuestion(){
-  let questionThree = prompt('Answer "yes" or "no": Is Stephen a pest control expert?').toLowerCase();
+  let questionThree = prompt('Answer "yes" or "no": Am I a pest control expert?').toLowerCase();
 
   if (questionThree === 'yes' || questionThree === 'y'){
-    alert(`That's right ${userName}! Stephen is an expert in insect and rodent pest control. He used this knowledge to solve decades-long pest infestations for the City of Chicago's public buildings, schools, airpots, and public transit. He's proud to have been able to affect so many lives by making that city a safer, greener place to live!`);
+    alert(`That's right ${userName}! I followed my interest in biology and complex systems to become an expert in insect and rodent pest control. I solved decades-long pest infestations for the City of Chicago's public buildings, schools, airpots, and public transit, making Chicago a safer and greener city.`);
     score++
   } else {
-    alert(`Sorry, ${userName} but Stephen is an insect and rodent pest control expert. He used this knowledge to solve decades-long pest infestations for the City of Chicago's public buildings, schools, airpots, and public transit. He's proud to have been able to affect so many lives by making that city a safer, greener place to live!`);
+    alert(`Sorry, ${userName} but I followed my interest in biology and complex systems to become an expert in insect and rodent pest control. I solved decades-long pest infestations for the City of Chicago's public buildings, schools, airpots, and public transit, making Chicago a safer and greener city.`);
   }
   alert(`Your score is ${score} out of 3.`);
 }
 
 
 function fourthQuestion(){
-  let questionFour = prompt('Answer "yes" or "no": Does Stephen love to cook and eat?').toLowerCase();
+  let questionFour = prompt('Answer "yes" or "no": Do I love to cook and eat?').toLowerCase();
 
   if (questionFour === 'yes' || questionFour === 'y'){
-    alert(`That's right ${userName}! The only thing Stephen loves more than cooking food is eating it. His favorite thing to make is lasagne because he can pack a ton of flavor into it. If you ask nicely, he'll give you the recipe!`);
+    alert(`That's right, ${userName}! The only thing I love more than cooking food is eating it. My favorite thing to make is lasagne`);
     score++;
   } else {
-    alert(`Sorry, ${userName} but the only thing Stephen loves more than cooking is eating. His favorite thing to make is lasagne because he can pack a ton of flavor into it. If you ask nicely, he'll give you the recipe!`);
+    alert(`Sorry, ${userName} but the only thing I love more than cooking food is eating it. My favorite thing to make is lasagne`);
   }
   alert(`Your score is ${score} out of 4.`);
 }
@@ -71,10 +71,10 @@ function fifthQuestion(){
   let questionFive = prompt('Answer "yes" or "no": Does Stephen like playing soccer?').toLowerCase();
 
   if (questionFive === 'no' || questionFive === 'n'){
-    alert(`That's right ${userName}! Stephen does not enjoy playing soccer. He'd rather play guitar or piano, or go to a yoga class`);
+    alert(`That's right ${userName}! I do not enjoy playing soccer. I'd rather play guitar or piano, or go to a yoga class`);
     score++;
   } else {
-    alert(`Sorry, ${userName} but Stephen does not enjoy playing soccer. He'd rather play guitar or piano, or go to a yoga class`);
+    alert(`Sorry, ${userName} but I do not enjoy playing soccer. I'd rather play guitar or piano, or go to a yoga class`);
   }
   alert(`Your score is ${score} out of 5.`);
 }
@@ -88,7 +88,7 @@ function sixthQuestion(){
 
   while(guessLimit > 0 && correctNumber === false){
     if (guessLimit === 4){
-      questionSix = prompt(`${userName}, Can you guess Stephen's favorite number in four guesses or less?`);
+      questionSix = prompt(`${userName}, Can you guess my favorite number in four guesses or less?`);
     } else if (questionSix < 12){
       questionSix = prompt('Too low. What\'s you next guess?');
     } else if (questionSix > 12){
@@ -102,7 +102,7 @@ function sixthQuestion(){
   }
 
   if(guessLimit === 0){
-    alert('Nice try. Here\'s the answer. Stephen\'s favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
+    alert('Nice try. Here\'s the answer. My favorite number is twelve because it is so musical. Twelve can be subdivided as 1, 2, 3, 4, 6, and 12! TONS OF FUN!');
   }
   alert(`Your score is ${score} out of 6.`);
 }
